@@ -23,6 +23,8 @@ export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:$HOME/go/bin
 export TERM=screen-256color
+/usr/bin/keychain -q --nogui $HOME/.ssh/id_ed25519
+source $HOME/.keychain/$HOST-sh
 
 # git config.
 alias dotfiles='/usr/bin/git --git-dir=/home/jasyuiop/.cfg/ --work-tree=/home/jasyuiop'
