@@ -9,6 +9,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # Theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# Repeat problem fixed
+DISABLE_AUTO_TITLE="true"
+
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 
@@ -51,6 +54,9 @@ alias du='du -sh'
 alias chmox='chmod +x'
 alias diff='diff --color'
 alias more='less'
+
+# Vmware aliases
+alias mountShared='sudo /usr/bin/vmhgfs-fuse .host:/ /home/jasyuiop/shares -o subtype=vmhgfs-fuse,allow_other'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
