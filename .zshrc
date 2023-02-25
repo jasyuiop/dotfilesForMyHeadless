@@ -37,13 +37,12 @@ alias tutor='vimtutor tr'
 alias VimBeGood='vim -c "VimBeGood"'
 
 # Tmux Sessions
-alias mySession='tmux new-session -d -s "My Session"'
+alias mux='tmux new-session -D -s "My Session"'
 
 # Directory aliases
-alias dvlp='cd ~/Developer'
+alias dvlp='cd ~/Development'
 alias mrkdwn='cd ~/Markdowns'
 alias dwnl='cd ~/Downloads'
-alias mydir='cd /mnt/c/Sync/MyDirectory'
 alias nvimdir='cd ~/.config/nvim/'
 
 # Useful aliases
