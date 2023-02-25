@@ -1,0 +1,8 @@
+[user]
+	name = M.Emre Nefesli
+	email = emrenefesli@outlook.com
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
+
