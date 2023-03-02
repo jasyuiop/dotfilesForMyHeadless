@@ -77,7 +77,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 
 git clone git@github.com:jasyuiop/nvim.git ~/.config/nvim
 
-tee -a ~/.ssh/config << END
+tee -a ~/.ssh/config <<END
 Host *
   AddKeysToAgent yes
   IdentityFile ~/.ssh/id_ed25519
