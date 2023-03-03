@@ -17,8 +17,8 @@ fi
 echo "max_parallel_downloads=10" | sudo tee -a /etc/dnf/dnf.conf
 
 sudo dnf check-update && sudo dnf upgrade -y
-sudo dnf install git wget curl zsh tmux p7zip unzip unrar htop neofetch keychain vim neovim python3-neovim ripgrep fd-find util-linux-user fzf net-tools gcc-c++ nodejs -y
-sudo dnf groupinstall "Development Tools" "Development Libraries" -y
+sudo dnf install -y git wget curl zsh tmux p7zip unzip unrar htop neofetch keychain vim neovim python3-neovim ripgrep fd-find util-linux-user fzf net-tools gcc-c++ nodejs
+sudo dnf groupinstall -y "Development Tools" "Development Libraries"
 
 # Tools Install 
 
@@ -31,7 +31,7 @@ sudo dnf -y install dnf-plugins-core
 sudo dnf config-manager \
 	--add-repo \
 	https://download.docker.com/linux/fedora/docker-ce.repo
-sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo groupadd docker
 sudo usermod -aG docker jasyuiop
 sudo systemctl enable docker
