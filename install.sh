@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -uoex pipefail
+set -eux 
 
 # Checking architecture
 
