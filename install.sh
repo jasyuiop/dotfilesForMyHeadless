@@ -1,8 +1,8 @@
 #!/bin/bash
 
-set -uo pipefail
+set -uoex pipefail
 
-echo "Checking architecture"
+# Checking architecture
 
 architecture='unknown'
 unamestr=$(uname -m)
@@ -12,9 +12,7 @@ elif [[ "$unamestr" == 'x86_64' ]]; then
 	architecture='amd64'
 fi
 
-echo "architecture $unamestr"
-
-echo "Base Install Started"
+# Base Install
 
 echo "max_parallel_downloads=10" | sudo tee -a /etc/dnf/dnf.conf
 
@@ -22,9 +20,7 @@ sudo dnf check-update && sudo dnf upgrade -y
 sudo dnf install git wget curl zsh tmux p7zip unzip unrar htop neofetch keychain vim neovim python3-neovim ripgrep fd-find util-linux-user fzf net-tools gcc-c++ nodejs -y
 sudo dnf groupinstall "Development Tools" "Development Libraries" -y
 
-echo "Base Install Finished"
-
-echo "Tools Install Started"
+# Tools Install 
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
@@ -56,9 +52,7 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
 go install github.com/lemonade-command/lemonade@latest
 
-echo "Tools Install Finished"
-
-echo "User Configuration Pre Install Started"
+# User Configuration Pre Install 
 
 ssh-keygen -t ed25519 -C "emrenefesli@outlook.com"
 eval "$(ssh-agent -s)"
@@ -83,9 +77,7 @@ Host *
   IdentityFile ~/.ssh/id_ed25519
 END
 
-echo "User Configuration Pre Install Finished"
-
-echo "Get Configuration From Github"
+# Get Configuration From Github
 
 git clone --bare git@github.com:jasyuiop/dotfilesForMyHeadless.git $HOME/.cfg
 function dotfiles {
