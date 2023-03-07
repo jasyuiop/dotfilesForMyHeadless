@@ -32,7 +32,7 @@ source $HOME/.keychain/$HOST-sh
 # git config.
 alias dotfiles='/usr/bin/git --git-dir=/home/jasyuiop/.cfg/ --work-tree=/home/jasyuiop'
 
-# nvim - vim
+# nvim
 alias vim='nvim'
 
 # tutor
@@ -41,12 +41,6 @@ alias VimBeGood='vim -c "VimBeGood"'
 
 # Tmux Sessions
 alias mux='tmux new-session -D -s "My Session"'
-
-# Directory aliases
-alias dvlp='cd ~/Development'
-alias mrkdwn='cd ~/Markdowns'
-alias dwnl='cd ~/Downloads'
-alias nvimdir='cd ~/.config/nvim/'
 
 # Useful aliases
 alias df='df -h'
