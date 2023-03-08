@@ -18,7 +18,7 @@ set hlsearch
 set hidden
 set relativenumber
 set autoindent
-set signcolumn=yes
+set signcolumn=no
 set background=dark
 
 " leader
