@@ -13,7 +13,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 DISABLE_AUTO_TITLE="true"
 
 # Plugins
-plugins=(git extract aliases z sudo tmux docker minikube docker-compose kubectl fd zsh-autosuggestions zsh-syntax-highlighting colored-man-pages)
+plugins=(git extract aliases z sudo tmux docker minikube docker-compose kubectl zsh-autosuggestions zsh-syntax-highlighting colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 
