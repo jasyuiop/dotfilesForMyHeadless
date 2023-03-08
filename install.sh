@@ -51,6 +51,7 @@ sudo install minikube-linux-arm64 /usr/local/bin/minikube
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
 go install github.com/lemonade-command/lemonade@latest
+go install github.com/charmbracelet/glow@latest
 
 # User Configuration Pre Install 
 
