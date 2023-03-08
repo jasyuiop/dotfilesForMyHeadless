@@ -12,9 +12,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Repeat problem fixed
 DISABLE_AUTO_TITLE="true"
 
-# Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
-
 # Plugins
 plugins=(git extract aliases z sudo tmux docker minikube docker-compose kubectl zsh-autosuggestions zsh-syntax-highlighting colored-man-pages)
 
