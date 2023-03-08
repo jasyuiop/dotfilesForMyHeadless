@@ -33,11 +33,6 @@ set history=100
 " faster scrolling
 set ttyfast
 
-" requires PLATFORM env variable set (in ~/.bashrc)
-if $PLATFORM == 'mac'
-  set backspace=indent,eol,start
-endif
-
 " allow sensing the filetype
 filetype plugin on
 

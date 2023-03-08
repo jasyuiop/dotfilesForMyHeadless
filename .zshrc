@@ -35,10 +35,6 @@ alias dotfiles='/usr/bin/git --git-dir=/home/jasyuiop/.cfg/ --work-tree=/home/ja
 # nvim
 alias vim='nvim'
 
-# tutor
-alias tutor='vimtutor tr'
-alias VimBeGood='vim -c "VimBeGood"'
-
 # Tmux Sessions
 alias mux='tmux new-session -D -s "My Session"'
 
