@@ -52,6 +52,7 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
 go install github.com/lemonade-command/lemonade@latest
 go install github.com/charmbracelet/glow@latest
+go install github.com/jesseduffield/lazygit@latest
 
 # User Configuration Pre Install 
 
