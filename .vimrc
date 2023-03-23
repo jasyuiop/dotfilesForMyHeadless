@@ -51,8 +51,6 @@ hi Error ctermbg=234 ctermfg=darkred cterm=NONE
 hi SpellBad ctermbg=234 ctermfg=darkred cterm=NONE
 hi SpellRare ctermbg=234 ctermfg=darkred cterm=NONE
 hi Search ctermbg=236 ctermfg=darkred
-hi vimTodo ctermbg=236 ctermfg=darkred
-hi Todo ctermbg=236 ctermfg=darkred
 hi IncSearch ctermbg=236 cterm=NONE ctermfg=darkred
 hi MatchParen ctermbg=236 ctermfg=darkred
 
@@ -67,14 +65,11 @@ au FileType * hi ModeMsg ctermfg=black cterm=NONE ctermbg=NONE
 au FileType * hi MoreMsg ctermfg=black ctermbg=NONE
 au FileType * hi NonText ctermfg=black ctermbg=NONE
 au FileType * hi vimGlobal ctermfg=black ctermbg=NONE
-au FileType * hi goComment ctermfg=black ctermbg=NONE
 au FileType * hi ErrorMsg ctermbg=234 ctermfg=darkred cterm=NONE
 au FileType * hi Error ctermbg=234 ctermfg=darkred cterm=NONE
 au FileType * hi SpellBad ctermbg=234 ctermfg=darkred cterm=NONE
 au FileType * hi SpellRare ctermbg=234 ctermfg=darkred cterm=NONE
 au FileType * hi Search ctermbg=236 ctermfg=darkred
-au FileType * hi vimTodo ctermbg=236 ctermfg=darkred
-au FileType * hi Todo ctermbg=236 ctermfg=darkred
 au FileType * hi IncSearch ctermbg=236 cterm=NONE ctermfg=darkred
 au FileType * hi MatchParen ctermbg=236 ctermfg=darkred
 au FileType yaml hi yamlBlockMappingKey ctermfg=NONE
