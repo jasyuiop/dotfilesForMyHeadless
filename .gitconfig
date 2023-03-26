@@ -2,7 +2,7 @@
 	name = M.Emre Nefesli
 	email = emrenefesli@outlook.com
 [core]
-	editor = vim
+	editor = nvim
 [init]
 	defaultBranch = main
 
